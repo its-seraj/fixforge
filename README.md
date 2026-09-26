@@ -7,7 +7,7 @@
 ## Installation
 
 ```bash
-npm install -g fixforge
+npm install -g .
 ```
 
 > Requires **Node.js ≥ 18**
