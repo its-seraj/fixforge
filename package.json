@@ -1,0 +1,51 @@
+{
+  "name": "fixforge",
+  "version": "1.0.0",
+  "description": "AI-powered ticket resolver — detects bugs, creates Jira issues, fixes code in a sandbox, and ships PRs automatically.",
+  "main": "src/cli/index.js",
+  "bin": {
+    "fixforge": "./bin/fixforge.js"
+  },
+  "scripts": {
+    "start": "node bin/fixforge.js",
+    "dev": "node --watch bin/fixforge.js",
+    "test": "jest --testPathPattern=tests/"
+  },
+  "keywords": [
+    "ai",
+    "devops",
+    "bug",
+    "jira",
+    "github",
+    "cli",
+    "agent",
+    "automation"
+  ],
+  "author": "FixForge",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@octokit/rest": "^20.1.2",
+    "axios": "^1.7.9",
+    "blessed": "^0.1.81",
+    "blessed-contrib": "^4.11.0",
+    "chalk": "^4.1.2",
+    "commander": "^12.1.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "figlet": "^1.7.0",
+    "inquirer": "^8.2.6",
+    "lowdb": "^1.0.0",
+    "node-fetch": "^2.7.0",
+    "ora": "^5.4.1",
+    "simple-git": "^3.36.0",
+    "winston": "^3.15.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
